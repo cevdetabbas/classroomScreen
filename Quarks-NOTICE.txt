@@ -1,0 +1,5 @@
+QuarksSplashDark animation by adhe / Adrian.
+Source: https://github.com/MX-Linux/QuarksSplashDark
+The original contents/splash/images/plasma_d.gif is used unchanged as quarks.gif.
+Theme metadata specifies GPL v2 or later; accompanying upstream LICENSE is included.
+Windows playback and update status layout were added locally on 2026-11-02.

@@ -1,0 +1,7 @@
+browser-profile/
+display-controller.pid
+display-paused.flag
+*.log
+original-settings.json
+original-power.*
+display-config.json.*.tmp

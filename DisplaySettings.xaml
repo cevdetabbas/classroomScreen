@@ -1,0 +1,25 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="Classroom Display | Settings" Width="450" SizeToContent="Height" ResizeMode="NoResize"
+ WindowStartupLocation="CenterOwner" Topmost="True" Background="#151F27" Foreground="#F0F6F4" FontFamily="Segoe UI">
+ <StackPanel Margin="28">
+  <TextBlock Text="Display settings" FontSize="25" FontWeight="SemiBold" Margin="0,0,0,20"/>
+  <UniformGrid Columns="2">
+   <StackPanel Margin="0,0,8,0"><Label Content="_Start (HH:mm)" Target="{Binding ElementName=StartTime}" Foreground="#C9DBD5"/><TextBox x:Name="StartTime" Padding="8"/></StackPanel>
+   <StackPanel Margin="8,0,0,0"><Label Content="_End (HH:mm)" Target="{Binding ElementName=EndTime}" Foreground="#C9DBD5"/><TextBox x:Name="EndTime" Padding="8"/></StackPanel>
+  </UniformGrid>
+  <TextBlock Text="Times use the computer's local clock." Foreground="#AABFB8" Margin="0,7,0,18"/>
+  <TextBlock Text="After hours" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10"/>
+  <CheckBox x:Name="Animate" Content="Show a moving icon on the black screen" Foreground="#F0F6F4" Margin="0,0,0,11"/>
+  <CheckBox x:Name="KeepDisplay" Content="Keep monitors powered after hours" Foreground="#F0F6F4"/>
+  <TextBlock Text="Allowing monitor sleep may delay the morning display on this PC." Foreground="#AABFB8" TextWrapping="Wrap" Margin="19,6,0,14"/>
+  <WrapPanel Margin="0,0,0,18">
+   <Button x:Name="PowerOptions" Content="Windows power options" Padding="9,5" Margin="0,0,8,0"/>
+   <Button x:Name="UpdatePreview" Content="Preview update animation" Padding="9,5"/>
+  </WrapPanel>
+  <TextBlock x:Name="Status" Foreground="#FFD3A3" TextWrapping="Wrap" Margin="0,0,0,8"/>
+  <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+   <Button Content="Cancel" IsCancel="True" Padding="14,6" Margin="0,0,8,0"/>
+   <Button x:Name="Save" Content="Save" IsDefault="True" Background="#A2F0C4" Padding="20,6"/>
+  </StackPanel>
+ </StackPanel>
+</Window>
